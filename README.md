@@ -58,8 +58,8 @@ smh/                         # 프로젝트 루트 디렉토리
 
 1. 레포지토리 클론
    ```bash
-   git clone https://github.com/yourusername/ai-proposal-assistant.git
-   cd ai-proposal-assistant
+   git clone https://github.com/EnzoMH/aiagent.git
+   cd aiagent
    ```
 
 2. 가상 환경 설정
@@ -126,12 +126,11 @@ uvicorn main:app --host 0.0.0.0 --port 8005 --reload
 
 ## 연락처
 
-문의사항이 있으시면 [이메일 주소]로 연락 주시거나 GitHub 이슈를 통해 문의해 주세요.
+문의사항이 있으시면 GitHub 이슈를 통해 문의해 주세요: https://github.com/EnzoMH/aiagent/issues
 ```
 
-이 README.md는 프로젝트의 구조와 기능을 잘 설명하고 있습니다. 필요에 따라 다음 정보를 추가로 제공해 주시면 더 상세하게 업데이트할 수 있습니다:
+리포지토리 주소가 변경되어 다음과 같은 부분이 수정되었습니다:
 
-1. 프로젝트의 GitHub 레포지토리 URL
-2. 연락처 정보 (이메일 등)
-3. 라이센스 정보가 다르다면 수정
-4. 특별한 설치 요구사항이 있다면 추가
+1. 클론 명령어의 리포지토리 URL을 `https://github.com/EnzoMH/aiagent.git`로 변경
+2. 클론 후 이동할 디렉토리를 `aiagent`로 변경
+3. 연락처 정보에 GitHub 이슈 URL을 `https://github.com/EnzoMH/aiagent/issues`로 추가
