@@ -1,0 +1,867 @@
+2025-01-14 12:54:21,717 - utils.pg - [ERROR] - RFP 섹션 추출 실패: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+2025-01-14 12:54:21,717 - utils.pg - [ERROR] - RFP 섹션 추출 실패: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+2025-01-14 12:54:21,717 - utils.pg - [ERROR] - RFP 섹션 추출 실패: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+2025-01-14 12:54:21,718 - utils.pg - [ERROR] - rfp_extract_sections 실행 중 오류 발생: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+2025-01-14 12:54:21,718 - utils.pg - [ERROR] - rfp_extract_sections 실행 중 오류 발생: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+2025-01-14 12:54:21,718 - utils.pg - [ERROR] - rfp_extract_sections 실행 중 오류 발생: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+2025-01-14 12:54:21,719 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 242, in process_sections
+    'general': await self._process_general_sections(sections_data),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 263, in _process_general_sections
+    std_name = self._standardize_section_name(section_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 286, in _standardize_section_name
+    for std_name, variants in self.SECTION_MAPPINGS.items():
+                              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 58, in rfp_extract_sections
+    sections = await self.server.process_sections({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 255, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+
+2025-01-14 12:54:21,719 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 242, in process_sections
+    'general': await self._process_general_sections(sections_data),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 263, in _process_general_sections
+    std_name = self._standardize_section_name(section_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 286, in _standardize_section_name
+    for std_name, variants in self.SECTION_MAPPINGS.items():
+                              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 58, in rfp_extract_sections
+    sections = await self.server.process_sections({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 255, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+
+2025-01-14 12:54:21,719 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 242, in process_sections
+    'general': await self._process_general_sections(sections_data),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 263, in _process_general_sections
+    std_name = self._standardize_section_name(section_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 286, in _standardize_section_name
+    for std_name, variants in self.SECTION_MAPPINGS.items():
+                              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 58, in rfp_extract_sections
+    sections = await self.server.process_sections({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 255, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 'ProposalServer' object has no attribute 'SECTION_MAPPINGS'
+
+2025-01-14 13:35:13,830 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+2025-01-14 13:35:13,830 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+2025-01-14 13:35:13,830 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+2025-01-14 13:35:13,831 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+2025-01-14 13:35:13,831 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+2025-01-14 13:35:13,831 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+2025-01-14 13:35:13,833 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 311, in _calculate_page_distribution
+    weights = self._calculate_section_weights(evaluation_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 363, in _calculate_section_weights
+    total_score = evaluation_data.get('정성평가', {}).get('총점', 100)
+                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 417, in generate_toc
+    page_allocations = self._calculate_page_distribution(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 336, in _calculate_page_distribution
+    raise PageAllocationError(f"페이지 분배 계산 실패: {str(e)}")
+utils.ps.PageAllocationError: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 79, in generate_toc
+    toc_result = await self.server.generate_toc(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 441, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+
+2025-01-14 13:35:13,833 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 311, in _calculate_page_distribution
+    weights = self._calculate_section_weights(evaluation_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 363, in _calculate_section_weights
+    total_score = evaluation_data.get('정성평가', {}).get('총점', 100)
+                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 417, in generate_toc
+    page_allocations = self._calculate_page_distribution(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 336, in _calculate_page_distribution
+    raise PageAllocationError(f"페이지 분배 계산 실패: {str(e)}")
+utils.ps.PageAllocationError: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 79, in generate_toc
+    toc_result = await self.server.generate_toc(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 441, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+
+2025-01-14 13:35:13,833 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 311, in _calculate_page_distribution
+    weights = self._calculate_section_weights(evaluation_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 363, in _calculate_section_weights
+    total_score = evaluation_data.get('정성평가', {}).get('총점', 100)
+                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 417, in generate_toc
+    page_allocations = self._calculate_page_distribution(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 336, in _calculate_page_distribution
+    raise PageAllocationError(f"페이지 분배 계산 실패: {str(e)}")
+utils.ps.PageAllocationError: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 79, in generate_toc
+    toc_result = await self.server.generate_toc(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 441, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 페이지 분배 계산 실패: 'NoneType' object has no attribute 'get'
+
+2025-01-14 13:39:21,126 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+2025-01-14 13:39:21,126 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+2025-01-14 13:39:21,126 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+2025-01-14 13:39:21,127 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+2025-01-14 13:39:21,127 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+2025-01-14 13:39:21,127 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+2025-01-14 13:39:21,128 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 458, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 489, in _create_toc_structure
+    for template_key, template_value in self.TOC_TEMPLATES.items():
+                                        ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 79, in generate_toc
+    toc_result = await self.server.generate_toc(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 476, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+
+2025-01-14 13:39:21,128 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 458, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 489, in _create_toc_structure
+    for template_key, template_value in self.TOC_TEMPLATES.items():
+                                        ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 79, in generate_toc
+    toc_result = await self.server.generate_toc(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 476, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+
+2025-01-14 13:39:21,128 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 458, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 489, in _create_toc_structure
+    for template_key, template_value in self.TOC_TEMPLATES.items():
+                                        ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 79, in generate_toc
+    toc_result = await self.server.generate_toc(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 476, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute 'TOC_TEMPLATES'
+
+2025-01-14 13:55:19,165 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 13:55:19,165 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 13:55:19,165 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 13:55:19,165 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 13:55:19,165 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 13:55:19,165 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 13:55:19,166 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 77, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 13:55:19,166 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 77, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 13:55:19,166 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 77, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 14:38:53,393 - utils.pg - [ERROR] - 문서 처리 실패: 'ProposalServer' object has no attribute 'process_document'
+2025-01-14 14:38:53,393 - utils.pg - [ERROR] - 문서 처리 실패: 'ProposalServer' object has no attribute 'process_document'
+2025-01-14 14:38:53,393 - utils.pg - [ERROR] - 문서 처리 실패: 'ProposalServer' object has no attribute 'process_document'
+2025-01-14 14:38:53,393 - utils.pg - [ERROR] - process_document 실행 중 오류 발생: 'ProposalServer' object has no attribute 'process_document'
+2025-01-14 14:38:53,393 - utils.pg - [ERROR] - process_document 실행 중 오류 발생: 'ProposalServer' object has no attribute 'process_document'
+2025-01-14 14:38:53,393 - utils.pg - [ERROR] - process_document 실행 중 오류 발생: 'ProposalServer' object has no attribute 'process_document'
+2025-01-14 14:38:53,394 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 157, in process_document
+    doc_result = await self.server.process_document({
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'process_document'
+
+2025-01-14 14:38:53,394 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 157, in process_document
+    doc_result = await self.server.process_document({
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'process_document'
+
+2025-01-14 14:38:53,394 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 157, in process_document
+    doc_result = await self.server.process_document({
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute 'process_document'
+
+2025-01-14 14:42:41,534 - utils.pg - [ERROR] - 문서 처리 실패: 문서 처리 실패: 활성화된 제안서가 없습니다
+2025-01-14 14:42:41,534 - utils.pg - [ERROR] - 문서 처리 실패: 문서 처리 실패: 활성화된 제안서가 없습니다
+2025-01-14 14:42:41,534 - utils.pg - [ERROR] - 문서 처리 실패: 문서 처리 실패: 활성화된 제안서가 없습니다
+2025-01-14 14:42:41,535 - utils.pg - [ERROR] - process_document 실행 중 오류 발생: 문서 처리 실패: 활성화된 제안서가 없습니다
+2025-01-14 14:42:41,535 - utils.pg - [ERROR] - process_document 실행 중 오류 발생: 문서 처리 실패: 활성화된 제안서가 없습니다
+2025-01-14 14:42:41,535 - utils.pg - [ERROR] - process_document 실행 중 오류 발생: 문서 처리 실패: 활성화된 제안서가 없습니다
+2025-01-14 14:42:41,538 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 1042, in process_document
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED])
+  File "e:\smh\smh\smh\utils\ps.py", line 226, in _validate_workflow_state
+    raise WorkflowError("활성화된 제안서가 없습니다")
+utils.ps.WorkflowError: 활성화된 제안서가 없습니다
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 154, in process_document
+    doc_result = await self.server.process_document({
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 1091, in process_document
+    raise ProposalServerError(f"문서 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 문서 처리 실패: 활성화된 제안서가 없습니다
+
+2025-01-14 14:42:41,538 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 1042, in process_document
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED])
+  File "e:\smh\smh\smh\utils\ps.py", line 226, in _validate_workflow_state
+    raise WorkflowError("활성화된 제안서가 없습니다")
+utils.ps.WorkflowError: 활성화된 제안서가 없습니다
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 154, in process_document
+    doc_result = await self.server.process_document({
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 1091, in process_document
+    raise ProposalServerError(f"문서 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 문서 처리 실패: 활성화된 제안서가 없습니다
+
+2025-01-14 14:42:41,538 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 1042, in process_document
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED])
+  File "e:\smh\smh\smh\utils\ps.py", line 226, in _validate_workflow_state
+    raise WorkflowError("활성화된 제안서가 없습니다")
+utils.ps.WorkflowError: 활성화된 제안서가 없습니다
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 154, in process_document
+    doc_result = await self.server.process_document({
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 1091, in process_document
+    raise ProposalServerError(f"문서 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 문서 처리 실패: 활성화된 제안서가 없습니다
+
+2025-01-14 15:00:41,547 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 15:00:41,547 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 15:00:41,547 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 15:00:41,548 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 15:00:41,548 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 15:00:41,548 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 15:00:41,549 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 77, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 15:00:41,549 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 77, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 15:00:41,549 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 77, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 15:47:38,260 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 15:47:38,260 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 15:47:38,260 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 15:47:38,260 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 15:47:38,260 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 15:47:38,260 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 15:47:38,261 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 15:47:38,261 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 15:47:38,261 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 16:19:10,386 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 16:19:10,386 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 16:19:10,386 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 16:19:10,386 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 16:19:10,386 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 16:19:10,386 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 16:19:10,399 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 16:19:10,399 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 16:19:10,399 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 16:23:07,955 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 16:23:07,955 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 16:23:07,955 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 16:23:07,955 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 16:23:07,955 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 16:23:07,955 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 16:23:07,956 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 16:23:07,956 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 16:23:07,956 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 17:01:23,439 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 17:01:23,439 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 17:01:23,439 - utils.pg - [ERROR] - 목차 생성 실패: 활성화된 제안서가 없습니다
+2025-01-14 17:01:23,440 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 17:01:23,440 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 17:01:23,440 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 활성화된 제안서가 없습니다
+2025-01-14 17:01:23,441 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 17:01:23,441 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 17:01:23,441 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 74, in generate_toc
+    raise ProposalServerError("활성화된 제안서가 없습니다")
+utils.ps.ProposalServerError: 활성화된 제안서가 없습니다
+
+2025-01-14 17:11:03,090 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:11:03,090 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:11:03,090 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:11:03,090 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:11:03,090 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:11:03,090 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:11:03,091 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 572, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 604, in _create_toc_structure
+    mapped_sections = self._map_standard_sections(sections)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 84, in generate_toc
+    toc_result = await self.server.generate_toc(total_pages, presentation_time)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 590, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+2025-01-14 17:11:03,091 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 572, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 604, in _create_toc_structure
+    mapped_sections = self._map_standard_sections(sections)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 84, in generate_toc
+    toc_result = await self.server.generate_toc(total_pages, presentation_time)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 590, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+2025-01-14 17:11:03,091 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 572, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 604, in _create_toc_structure
+    mapped_sections = self._map_standard_sections(sections)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 84, in generate_toc
+    toc_result = await self.server.generate_toc(total_pages, presentation_time)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 590, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+2025-01-14 17:14:27,781 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:14:27,781 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:14:27,781 - utils.pg - [ERROR] - 목차 생성 실패: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:14:27,781 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:14:27,781 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:14:27,781 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+2025-01-14 17:14:27,783 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 572, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 604, in _create_toc_structure
+    mapped_sections = self._map_standard_sections(sections)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 84, in generate_toc
+    toc_result = await self.server.generate_toc(total_pages, presentation_time)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 590, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+2025-01-14 17:14:27,783 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 572, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 604, in _create_toc_structure
+    mapped_sections = self._map_standard_sections(sections)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 84, in generate_toc
+    toc_result = await self.server.generate_toc(total_pages, presentation_time)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 590, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+2025-01-14 17:14:27,783 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 572, in generate_toc
+    toc_structure = await self._create_toc_structure(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 604, in _create_toc_structure
+    mapped_sections = self._map_standard_sections(sections)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 84, in generate_toc
+    toc_result = await self.server.generate_toc(total_pages, presentation_time)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\ps.py", line 590, in generate_toc
+    raise ProposalServerError(f"목차 생성 실패: {str(e)}")
+utils.ps.ProposalServerError: 목차 생성 실패: 'ProposalServer' object has no attribute '_map_standard_sections'
+
+2025-01-14 17:22:55,513 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:22:55,513 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:22:55,513 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:22:55,513 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:22:55,513 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:22:55,513 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:22:55,515 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-14 17:22:55,515 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-14 17:22:55,515 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-14 17:23:17,860 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:23:17,860 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:23:17,860 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:23:17,860 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:23:17,860 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:23:17,860 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-14 17:23:17,861 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-14 17:23:17,861 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-14 17:23:17,861 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-15 09:43:03,872 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-15 09:43:03,872 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-15 09:43:03,872 - utils.pg - [ERROR] - 목차 생성 실패: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-15 09:43:03,872 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-15 09:43:03,872 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-15 09:43:03,872 - utils.pg - [ERROR] - generate_toc 실행 중 오류 발생: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+2025-01-15 09:43:03,924 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-15 09:43:03,924 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+2025-01-15 09:43:03,924 - utils.pg - [ERROR] - Traceback: Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\ps.py", line 276, in process_sections
+    self._validate_workflow_state([WorkflowStatus.INITIALIZED, WorkflowStatus.FILE_PROCESSED])
+  File "e:\smh\smh\smh\utils\ps.py", line 232, in _validate_workflow_state
+    raise WorkflowError(
+utils.ps.WorkflowError: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\smh\smh\smh\utils\pg.py", line 16, in wrapper
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\smh\smh\smh\utils\pg.py", line 81, in generate_toc
+    await self.server.process_sections({"sections": normalized_sections})
+  File "e:\smh\smh\smh\utils\ps.py", line 298, in process_sections
+    raise ProposalServerError(f"섹션 처리 실패: {str(e)}")
+utils.ps.ProposalServerError: 섹션 처리 실패: 현재 상태(toc_generated)에서는 이 작업을 수행할 수 없습니다. 필요한 상태: initialized, file_processed
+

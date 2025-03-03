@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 제안서 어시스턴트</title>
+
+    <!-- External CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-content">
+          <!-- Left: Title and Status -->
+          <div class="nav-left">
+            <h1 class="app-title">AI 제안서 어시스턴트</h1>
+            <div class="connection-status">
+              <span id="connection-indicator" class="offline">●</span>
+              <span id="connection-text">연결 중...</span>
+            </div>
+          </div>
+
+          <!-- Center: Model Selection -->
+          <div class="model-selector">
+            <div class="model-button-container">
+              <button class="model-button active" data-model="meta">
+                <img src="/static/image/meta.png" alt="Meta LLM" />
+                <div class="model-info">
+                  <span class="model-name">Meta</span>
+                  <span class="model-desc">빠른 응답</span>
+                </div>
+              </button>
+            </div>
+            <div class="model-button-container">
+              <button class="model-button" data-model="claude">
+                <img src="/static/image/claude.png" alt="Claude" />
+                <div class="model-info">
+                  <span class="model-name">Claude</span>
+                  <span class="model-desc">상세한 분석</span>
+                </div>
+              </button>
+            </div>
+            <div class="model-button-container">
+              <button class="model-button" data-model="gemini">
+                <img src="/static/image/gemini.png" alt="Gemini" />
+                <div class="model-info">
+                  <span class="model-name">Gemini</span>
+                  <span class="model-desc">균형잡힌 성능</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Actions -->
+          <div class="nav-actions">
+            <button
+              class="action-button new-proposal"
+              onclick="window.location.href='/prop'"
+            >
+              <i class="fas fa-file-alt"></i>
+              <span>새 제안서 작성</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Chat Container -->
+      <div class="chat-container">
+        <!-- File Analysis Panel -->
+        <div id="file-analysis-panel" class="file-analysis-panel hidden">
+          <div class="panel-header">
+            <h3>문서 분석</h3>
+            <button class="close-panel">×</button>
+          </div>
+          <div class="panel-content">
+            <div id="file-info"></div>
+            <div id="analysis-results"></div>
+          </div>
+        </div>
+
+        <!-- Message Templates (hidden) -->
+        <div id="message-templates" style="display: none">
+          <!-- AI Message Template -->
+          <div class="message assistant template">
+            <div class="message-avatar">
+              <img src="" alt="AI Avatar" class="ai-avatar" />
+            </div>
+            <div class="message-content"></div>
+          </div>
+
+          <!-- User Message Template -->
+          <div class="message user template">
+            <div class="message-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="message-content"></div>
+          </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chat-messages">
+          <!-- Welcome Message -->
+          <div class="message system">
+            <div class="message-content">
+              <h2>AI 제안서 어시스턴트에 오신 것을 환영합니다!</h2>
+              <p>다음과 같은 작업을 도와드릴 수 있습니다:</p>
+              <ul>
+                <li>RFP 문서 분석 및 해석</li>
+                <li>제안서 작성 전략 수립</li>
+                <li>평가 항목 분석 및 대응 방안</li>
+              </ul>
+              <p>시작하려면 RFP 문서를 업로드하거나 질문을 입력해주세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="input-area" id="dropArea">
+        <!-- File Upload Progress -->
+        <div id="upload-progress" class="upload-progress hidden">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <span class="progress-text">파일 분석 중...</span>
+        </div>
+
+        <!-- Uploaded Files -->
+        <div class="uploaded-files" id="uploadedFiles"></div>
+
+        <!-- File Drop Overlay -->
+        <div class="drop-overlay" id="dropOverlay">
+          <div class="drop-content">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <div class="drop-message">파일을 여기에 드롭하세요</div>
+            <div class="supported-formats">
+              지원 형식: PDF, HWP, HWPX, DOC, DOCX
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="input-container">
+          <!-- File Upload Button -->
+          <button
+            class="input-button file-button"
+            onclick="document.getElementById('fileInput').click()"
+          >
+            <i class="fas fa-paperclip"></i>
+            <span class="tooltip">파일 첨부</span>
+          </button>
+          <input
+            type="file"
+            id="fileInput"
+            hidden
+            accept=".pdf,.hwp,.hwpx,.doc,.docx"
+            multiple
+          />
+
+          <!-- Message Input -->
+          <textarea
+            class="message-input"
+            id="message-input"
+            placeholder="메시지를 입력하세요..."
+            rows="1"
+          ></textarea>
+
+          <!-- Send Button -->
+          <button class="input-button send-button" id="send-button">
+            <i class="fas fa-paper-plane"></i>
+            <span class="tooltip">전송</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal for File Analysis -->
+    <div id="analysis-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>문서 분석 결과</h3>
+          <button class="modal-close">×</button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-file-info"></div>
+          <div id="modal-analysis"></div>
+        </div>
+        <div class="modal-footer">
+          <button class="button-primary" id="start-proposal">
+            제안서 작성 시작
+          </button>
+          <button class="button-secondary" id="ask-questions">
+            문서에 대해 질문하기
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
