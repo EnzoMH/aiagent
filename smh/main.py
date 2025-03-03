@@ -127,7 +127,7 @@ class AIModelManager:
 
     def _initialize_local_model(self):
         """Initialize local LLM with GPU support if available"""
-        MODEL_PATH = r"C:\Users\MyoengHo Shin\pjt\newkl\smh\llama-korean\llama-3.2-Korean-Bllossom-3B-gguf-Q4_K_M.gguf"
+        MODEL_PATH = r"Your Model Local Path"
         try:
             return Llama(
                 model_path=MODEL_PATH,
